@@ -6,6 +6,7 @@ import os
 SQLALCHEMY_DATABASE_URL = os.environ['SQLALCHEMY_DATABASE_URL']
 
 if 'sqlite' in SQLALCHEMY_DATABASE_URL:
+    print('sqlite')
     engine = create_engine(SQLALCHEMY_DATABASE_URL, connect_args = {"check_same_thread": False})
 else:
     engine = create_engine(SQLALCHEMY_DATABASE_URL)
