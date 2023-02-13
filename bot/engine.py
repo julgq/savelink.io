@@ -26,6 +26,9 @@ def bot_engine(message: Message, db: Session):
         link = short_link(message.message, user, db)
         send_message_twilio(message.number, get_answers('save_link', 'es') % link)
 
+    else:
+        # no is url, then search links using the text.
+
         """
         Escenarios:
             1 - No tiene cuenta, se da mensaje de bienvenida y se crea la cuenta, se valida el mensaje

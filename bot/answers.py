@@ -12,6 +12,10 @@ def get_answers(key, language):
         'save_link': {
             'es': 'El link fue guardado con éxito: %s',
             'en': 'The link was saved successfully: %s',
+        },
+        'search_text': {
+            'es': 'Buscando links con esta frase',
+            'en': '',
         }
     }
 
